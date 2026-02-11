@@ -27,6 +27,17 @@ To install the project dependencies, run the following command in your terminal:
 pnpm install
 ```
 
+## Containerized Usage
+
+You can build and run the app with Docker:
+
+```bash
+docker build -t node-ts-starter .
+docker run --rm -p 8000:8000 --env-file .env node-ts-starter
+```
+
+If you do not have a `.env` file, omit `--env-file` and the container will use the defaults from the Dockerfile.
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -66,6 +77,7 @@ Currently, this script echoes an error message and exits. You should replace thi
 ```
 .
 ├── nodemon.json        # Nodemon configuration for development
+├── Dockerfile          # Container build definition
 ├── package.json        # Project metadata and dependencies
 ├── README.md           # This file
 ├── tsconfig.json       # TypeScript compiler options
