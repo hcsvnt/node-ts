@@ -9,8 +9,8 @@
         "dev": "nodemon",
         "build": "tsc",
         "lint": "eslint src --ignore-path .eslintignore",
-        "publish": "npm publish --access public",
-        "update": "npm version patch && npm run build && npm run publish",
+        "publish": "pnpm publish --access public",
+        "update": "pnpm version patch && pnpm run build && pnpm run publish",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
@@ -21,16 +21,17 @@
     },
     "license": "ISC",
     "devDependencies": {
-        "@eslint/js": "^9.28.0",
-        "@types/express": "^5.0.3",
-        "@types/node": "^24.0.0",
-        "eslint": "^9.28.0",
-        "nodemon": "^3.1.10",
+        "@eslint/js": "^9.39.2",
+        "@types/express": "^5.0.6",
+        "@types/node": "^24.10.13",
+        "eslint": "^9.39.2",
+        "nodemon": "^3.1.11",
         "ts-node": "^10.9.2",
-        "typescript": "^5.8.3",
-        "typescript-eslint": "^8.34.0"
+        "typescript": "^5.9.3",
+        "typescript-eslint": "^8.55.0"
     },
     "dependencies": {
-        "express": "^5.1.0"
-    }
+        "express": "^5.2.1"
+    },
+    "packageManager": "pnpm@9.0.0"
 }

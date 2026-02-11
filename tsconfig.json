@@ -1,9 +1,7 @@
 {
     "compilerOptions": {
-        "allowImportingTsExtensions": true,
         "module": "NodeNext",
         "moduleResolution": "NodeNext",
-        "noEmit": true,
         "outDir": "dist",
         "sourceMap": true,
         "strict": true,

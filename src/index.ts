@@ -1,5 +1,5 @@
 import express from 'express';
-import { helper } from './utils/helper.ts';
+import { helper } from './utils/helper.js';
 
 const app = express();
 const port = process.env.PORT || 8000;

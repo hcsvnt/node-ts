@@ -5,8 +5,9 @@ A modern Express starter with TypeScript, ESM and Hot Reload.
 ## Author
 
 - **Name:** Mateusz Hallala
-- **Email:** mateuszhallala@gmail.com
-- **URL:** https://github.com/hcsvnt
+- **Email:** hallalwa.work@gmail.com
+- **github:** https://github.com/hcsvnt
+- **URL:** https://hallala.work
 
 ## License
 
@@ -15,47 +16,48 @@ This project is licensed under the ISC License.
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
-* You have installed the latest version of [Node.js and npm](https://nodejs.org/en/download/).
+* You have installed the latest version of [Node.js](https://nodejs.org/en/download/).
+* You have installed [pnpm](https://pnpm.io/installation) (or enabled it via `corepack enable`).
 
 ## Installation
 
 To install the project dependencies, run the following command in your terminal:
 
 ```bash
-npm install
+pnpm install
 ```
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm run build`
+### `pnpm run build`
 
 Builds the app for production to the `dist` folder.
 It correctly bundles TypeScript files in production mode.
 
-### `npm run dev`
+### `pnpm run dev`
 
 Runs the app in development mode with hot reloading using `nodemon`.
 Open [http://localhost:8000](http://localhost:8000) (or the port specified in your `.env` file or `src/index.ts`) to view it in the browser.
 The server will automatically reload if you make changes to the code.
 You will see any lint errors in the console.
 
-### `npm start`
+### `pnpm start`
 
 Runs the built app from the `dist` folder.
 This is the command you would typically use in a production environment after building the project.
 It expects a `.env` file in the root directory for environment variables (e.g., `PORT`).
 
-### `npm run publish`
+### `pnpm run publish`
 
 Builds the project and publishes it to npm. Make sure you are logged in to npm and have the necessary permissions.
 
-### `npm run update`
+### `pnpm run update`
 
 Increments the patch version of the package, builds the project, and then publishes it to npm.
 
-### `npm test`
+### `pnpm test`
 
 Currently, this script echoes an error message and exits. You should replace this with your actual test command.
 
@@ -94,7 +96,7 @@ To ensure code quality and consistency, this project uses ESLint with TypeScript
 To run the linter, use the following command:
 
 ```bash
-npm run lint
+pnpm run lint
 ```
 
 This will lint all files in the `src` directory and ignore files specified in the `.eslintignore` file (e.g., the `dist` directory).
